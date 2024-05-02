@@ -11,12 +11,12 @@
 	/* set this to a recent ppm checkpoint when you start working on a project...
 	   find one at https://packagemanager.posit.co/client/#/repos/2/overview */
 
-	// "containerEnv": {
-  //   "PKG_CRAN_MIRROR": "https://packagemanager.posit.co/cran/2023-01-31"
-	// },
+	"containerEnv": {
+    "PKG_CRAN_MIRROR": "https://packagemanager.posit.co/cran/2023-01-31"
+	},
 	"features": {
 		"ghcr.io/rocker-org/devcontainer-features/quarto-cli:1": {
-			"version": "prerelease"
+			"version": "v1.4.554"
 		},
 		/* add apt packages (eg. system requirements for r packages) here.
 		   note that they are not frozen */
@@ -31,9 +31,9 @@
 
 	"customizations": {
 		/* add vscode extensions to be bundled in here */
-		// "vscode": {
-		// 	"extensions": ["mechatroner.rainbow-csv"]
-		// },
+		"vscode": {
+			"extensions": ["mechatroner.rainbow-csv"]
+		},
 		/* these files will open when you launch as a codespace */
 		"codespaces": {
 			"openFiles": ["README.md"]
